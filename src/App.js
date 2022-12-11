@@ -1,16 +1,18 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import Home from './Components/Home';
+import Footer from './Components/Footer/Footer';
+import NavBar from './Components/NavBar/NavBar';
+import Home from './pages/Home/Home';
 
 
 function App() {
   return (
     <div className="App">
-      {/* <NavBar/> */}
+      <NavBar/>
         <Routes>
           <Route exact path="/" element={<Home/>}/>
         </Routes>
-        {/* <Footer/> */}
+        <Footer/>
     </div>
   );
 }
