@@ -1,5 +1,5 @@
 import { Typography } from '@mui/material';
-import { Box } from '@mui/system';
+import { Box, display } from '@mui/system';
 import './Home.css';
 export default function Home(){
     return(
@@ -9,7 +9,7 @@ export default function Home(){
                 noWrap
                 component="a"
                 href=""
-                sx={{
+                style={{
                 mr: 2,
                 flexGrow: 1,
                 fontFamily: 'Poppins',
@@ -21,7 +21,15 @@ export default function Home(){
             >
                 District Wise Products
             </Typography>      
-            <Box>
+            <Box style={{
+                width:'70%',
+                height:'50vh',
+                backgroundColor:'pink',
+                transform: 'translate(20%)',
+                display:'flex'
+            }}>
+                {/* <City/>
+                <Map/> */}
             </Box>  
         </div>
     );
