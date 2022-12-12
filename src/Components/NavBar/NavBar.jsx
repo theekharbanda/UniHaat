@@ -12,8 +12,10 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import ShoppingCartCheckoutRoundedIcon from '@mui/icons-material/ShoppingCartCheckoutRounded';
+import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 
-const pages = ['Products', 'Pricing', 'Blog'];
+const screens = ['Home', 'Top Selling Items','Shop By District'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function NavBar() {
@@ -87,7 +89,7 @@ function NavBar() {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {pages.map((page) => (
+              {screens.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Typography sx={{fontFamily: 'Poppins'}} textAlign="center">{page}</Typography>
                 </MenuItem>
@@ -114,17 +116,42 @@ function NavBar() {
             LOGO
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
+            {screens.map((page) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' ,fontFamily:'Poppins'}}
+                sx={{ my: 2, color: 'white', display: 'block' ,fontFamily:'Poppins',textTransform:'capitalize'}}
               >
                 {page}
               </Button>
             ))}
           </Box>
-
+          <Box className='search' sx={{flexGrow:8, display: 'flex', alignItems: 'center'}}>
+            <SearchRoundedIcon sx={{ color: 'action.active', mr: 1, my: 0.5 }} />
+            <input
+            type="text"
+            placeholder='    Search unique products'
+            style={{
+              borderRadius:'15px',
+              border:'none',
+              border: 0,
+              width:'80%',
+              height:'4vh',
+              outline:'none',
+              fontFamily:'Poppins',
+              fontSize:'13px'
+            }}
+            />
+          </Box>
+          <Box sx={{ flexGrow: 0.1, display: { xs: 'none', md: 'flex' } }}>
+              <Button startIcon={<ShoppingCartCheckoutRoundedIcon/>}
+                // onClick={}
+                sx={{ my: 2, color: 'white', display: 'flex' ,fontFamily:'Poppins',textTransform:'capitalize'}}
+              >
+                My Cart
+              </Button>
+          
+          </Box>
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>

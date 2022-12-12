@@ -4,3 +4,8 @@
     position: sticky;
     background-color: rgba(37, 142, 138, 0.345) ;
   }
+  input::placeholder{
+    font-family: 'Poppins';
+    margin-left: 1000px;
+  }
+  
