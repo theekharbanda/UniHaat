@@ -9,9 +9,9 @@ export default function Map(){
              <Box
              className="map" 
              >
-                <TextField value={'Lucknow'} select label="City" fullWidth  variant="filled">
-                        <MenuItem value={'Lucknow'}>
-                            Lucknow
+                <TextField value={'Lucknow'} select label="City" sx={{width:'80%',fontFamily:'Poppins'}}  variant="filled">
+                        <MenuItem value={'Lucknow'} sx={{fontFamily:'Poppins'}}>
+                            Lucknow, UP
                         </MenuItem>
                 </TextField>
                 <img 

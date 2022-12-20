@@ -14,6 +14,7 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import ShoppingCartCheckoutRoundedIcon from '@mui/icons-material/ShoppingCartCheckoutRounded';
 import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
+import Logo from '../../assets/UniHaatLogo.png';
 
 const screens = ['Home'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -38,10 +39,19 @@ function NavBar() {
   };
 
   return (
-    <AppBar position="sticky" className='Navbar' sx={{backgroundColor:'rgba(35, 153, 149, 0.345)'}}>
+    <AppBar position="sticky" className='Navbar' sx={{backgroundColor:'rgba(74, 224, 94, 0.345)'}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          <Box
+              component="img"
+              sx={{
+              height: 64,display: { xs: 'none', md: 'flex' }, mr: 1
+              }}
+              alt="Your logo."
+              src={Logo}
+          />
+          {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
+          
           <Typography
             variant="h6"
             noWrap
@@ -53,7 +63,7 @@ function NavBar() {
               fontFamily: 'Poppins',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: 'inherit',
+              color: 'black',
               textDecoration: 'none',
             }}
           >
@@ -67,7 +77,7 @@ function NavBar() {
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
-              color="inherit"
+              color="black"
             >
               <MenuIcon />
             </IconButton>
@@ -91,12 +101,20 @@ function NavBar() {
             >
               {screens.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography sx={{fontFamily: 'Poppins'}} textAlign="center">{page}</Typography>
+                  <Typography sx={{fontFamily: 'Poppins',color:'black'}} textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+          <Box
+              component="img"
+              sx={{
+              height: 60, display: { xs: 'flex', md: 'none' }, mr: 1 
+              }}
+              alt="Your logo."
+              src={Logo}
+          />
+          {/* <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} /> */}
           <Typography
             variant="h5"
             noWrap
@@ -108,8 +126,8 @@ function NavBar() {
               flexGrow: 1,
               fontFamily: 'Poppins',
               fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
+              letterSpacing: '.2rem',
+              color: 'black',
               textDecoration: 'none',
             }}
           >
@@ -120,7 +138,7 @@ function NavBar() {
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' ,fontFamily:'Poppins',textTransform:'capitalize'}}
+                sx={{ my: 2, color: 'black', display: 'block' ,fontFamily:'Poppins',textTransform:'capitalize'}}
               >
                 {page}
               </Button>
