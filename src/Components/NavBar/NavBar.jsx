@@ -15,7 +15,7 @@ import AdbIcon from '@mui/icons-material/Adb';
 import ShoppingCartCheckoutRoundedIcon from '@mui/icons-material/ShoppingCartCheckoutRounded';
 import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 
-const screens = ['Home', 'Top Selling Items','Shop By District'];
+const screens = ['Home'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function NavBar() {
@@ -38,7 +38,7 @@ function NavBar() {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="sticky" className='Navbar' sx={{backgroundColor:'rgba(35, 153, 149, 0.345)'}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
@@ -57,7 +57,7 @@ function NavBar() {
               textDecoration: 'none',
             }}
           >
-            UniMart
+            UniHaat
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -113,7 +113,7 @@ function NavBar() {
               textDecoration: 'none',
             }}
           >
-            LOGO
+            UniHaat
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {screens.map((page) => (
@@ -126,7 +126,7 @@ function NavBar() {
               </Button>
             ))}
           </Box>
-          <Box className='search' sx={{flexGrow:8, display: 'flex', alignItems: 'center'}}>
+          {/* <Box className='search' sx={{flexGrow:8, display: 'flex', alignItems: 'center'}}>
             <SearchRoundedIcon sx={{ color: 'action.active', mr: 1, my: 0.5 }} />
             <input
             type="text"
@@ -142,8 +142,8 @@ function NavBar() {
               fontSize:'13px'
             }}
             />
-          </Box>
-          <Box sx={{ flexGrow: 0.1, display: { xs: 'none', md: 'flex' } }}>
+          </Box> */}
+          {/* <Box sx={{ flexGrow: 0.1, display: { xs: 'none', md: 'flex' } }}>
               <Button startIcon={<ShoppingCartCheckoutRoundedIcon/>}
                 // onClick={}
                 sx={{ my: 2, color: 'white', display: 'flex' ,fontFamily:'Poppins',textTransform:'capitalize'}}
@@ -151,8 +151,8 @@ function NavBar() {
                 My Cart
               </Button>
           
-          </Box>
-          <Box sx={{ flexGrow: 0 }}>
+          </Box> */}
+          {/* <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
@@ -180,7 +180,7 @@ function NavBar() {
                 </MenuItem>
               ))}
             </Menu>
-          </Box>
+          </Box> */}
         </Toolbar>
       </Container>
     </AppBar>
