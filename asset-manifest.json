@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/UniHaat/static/css/main.02017e64.css",
+    "main.js": "/UniHaat/static/js/main.e3624741.js",
+    "static/js/787.990b858d.chunk.js": "/UniHaat/static/js/787.990b858d.chunk.js",
+    "static/media/UniHaatLogo.png": "/UniHaat/static/media/UniHaatLogo.28d6b49d8b94fc4a0935.png",
+    "static/media/UPmap.png": "/UniHaat/static/media/UPmap.7b34b8f1473ba78bdd01.png",
+    "static/media/Lucknow.jpg": "/UniHaat/static/media/Lucknow.9e69b3746d2069da1260.jpg",
+    "index.html": "/UniHaat/index.html",
+    "main.02017e64.css.map": "/UniHaat/static/css/main.02017e64.css.map",
+    "main.e3624741.js.map": "/UniHaat/static/js/main.e3624741.js.map",
+    "787.990b858d.chunk.js.map": "/UniHaat/static/js/787.990b858d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.02017e64.css",
+    "static/js/main.e3624741.js"
+  ]
+}
