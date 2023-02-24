@@ -1,7 +1,7 @@
 .NavBar{
     top: 0;
     width: 100%;
-    backgroundColor: rgba(91, 187, 183, 0.345) !important;
+    backgroundColor: rgba(74, 224, 94, 0.345) !important;
   }
   input::placeholder{
     font-family: 'Poppins';

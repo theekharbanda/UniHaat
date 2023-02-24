@@ -8,8 +8,9 @@ export default function Map(){
         <div className="map_container">
              <Box
              className="map" 
+             sx={{borderRadius:'20px'}}
              >
-                <TextField value={'Lucknow'} select label="City" sx={{width:'80%',fontFamily:'Poppins'}}  variant="filled">
+                <TextField  select label="City" sx={{width:'80%',fontFamily:'Poppins',borderRadius:'20px'}}  >
                         <MenuItem value={'Lucknow'} sx={{fontFamily:'Poppins'}}>
                             Lucknow, UP
                         </MenuItem>

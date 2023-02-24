@@ -9,7 +9,7 @@ import Lucknow from '../../assets/Lucknow.jpg';
 
 export default function CityCard() {
   return (
-    <Card >
+    <Card sx={{borderRadius:'20px'}}>
       <CardMedia
         component="img"
         alt="green iguana"
